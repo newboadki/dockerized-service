@@ -14,7 +14,7 @@ function startServer(port) {
   var options = {
     key: fs.readFileSync('./certificates/invoice-service/server-key.pem'),
     cert: fs.readFileSync('./certificates/invoice-service/server-crt.pem'),
-    ca: fs.readFileSync('ca-crt.pem'),
+    ca: fs.readFileSync('./certificates/ca-crt.pem'),
     requestCert: true,
     rejectUnauthorized: true
   };
